@@ -1,0 +1,144 @@
+ 
+
+a{
+	text-decoration:none;
+	text-align:left;
+	color:#00274C;
+}
+a.bold{
+	color:#A5A508;
+	font-weight:bold;
+}
+
+a.link{
+	color:#00274C;
+	font-weight:bold;
+}
+
+body{
+    font-size:1em;
+    font-family:Helvetica, "Trebuchet MS", Verdana, Sans-Serif;
+    margin:0;
+    padding:10px;
+    background-color:#edecec;
+    color:#00274C;
+	-webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+
+img {
+    width: 70%; /* Ensures images are responsive */
+    height: auto;
+    display: block; /* Ensures images behave as expected */
+    margin: 0 0 10px 0;
+}
+
+
+.count{
+	position:relative;
+	padding-left:30px;
+}
+.count:before {
+	counter-increment: section;
+	content: counter(section) ".";
+	position:absolute;
+	left:0;
+	top:0;
+	text-align:right;
+	width:15px;
+}
+
+
+.section-entry{
+	margin-bottom:10px;
+}
+
+.section-title{
+	margin:20px 0 10px 0;
+	font-weight:bold;
+	font-size: 1.3em;
+}
+
+.section-counter{
+	counter-reset: section;
+}
+
+.title{
+	font-weight:bold;
+}
+
+
+
+#title{
+	margin-left:10%;
+	top:0px;
+	left:0;
+	right:0;
+	background-color:#edecec;
+	z-index:100;
+	border-bottom:2px solid #D86018;
+	padding:35px 0 0 5px;
+	min-width:300px;
+	text-align:left;
+}
+
+#name{
+	font-weight:bold;
+	font-size:1.5em;
+	text-transform:uppercase;
+	letter-spacing:.5em;
+	margin-bottom:10px;
+}
+
+#content{
+	display: flex;
+	overflow-wrap: break-word;
+	flex-direction: row;
+}
+
+#sidebar-wrap{
+	float:left;
+	width:20%;
+	margin:20px 0 0 0;
+	margin-left:10%;
+	gap:10px;
+    max-width: 300px;
+}
+	
+#sidebar-content{
+	position:relative;
+	
+}
+
+#content-wrap{
+	margin:20px 0 0 10px;
+}
+
+
+@media only screen and (max-width: 1026px) {
+	#title{
+		margin-left:10%;
+		margin-right:10%;
+		top:0px;
+		left:0;
+		right:0;
+		background-color:#edecec;
+		z-index:100;
+		border-bottom:2px solid #D86018;
+		padding:35px 0 0 5px;
+		min-width:300px;
+		text-align:center;
+	} 
+	#sidebar-wrap { 
+	  display: none; 
+	} 
+	#content-wrap{
+		margin:20px 0 0 0;
+		margin-left:10%;
+	}
+}
